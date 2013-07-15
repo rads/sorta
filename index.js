@@ -20,7 +20,7 @@ function Sorta (opts, createElement) {
     };
     
     this.writable = true;
-    this.element = document.createElement('div');
+    this.element = opts.el || document.createElement('div');
     
     this.rows = {};
     this._createElement = opts.createElement || createElement;
